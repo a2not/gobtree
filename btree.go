@@ -14,3 +14,9 @@ type BTree struct {
 	length int
 	root   *node
 }
+
+func New(degree int) *BTree {
+	return &BTree{
+		degree: degree,
+	}
+}
